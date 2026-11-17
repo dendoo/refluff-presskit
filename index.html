@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Refluff: Carpet Cleaning ASMR: press kit</title>
+<meta name="description" content="A first-person ASMR sim about washing filthy rugs clean, on a real simulation of water, foam and mud.">
+<link rel="icon" href="assets/icon_64.png">
+<link rel="canonical" href="https://dendoo.github.io/refluff-presskit/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Refluff: Carpet Cleaning ASMR: press kit">
+<meta property="og:description" content="A first-person ASMR sim about washing filthy rugs clean, on a real simulation of water, foam and mud.">
+<meta property="og:url" content="https://dendoo.github.io/refluff-presskit/">
+<meta property="og:image" content="https://dendoo.github.io/refluff-presskit/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@font-face { font-family: "Fredoka"; src: url("assets/fonts/Fredoka.woff2") format("woff2"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "Nunito"; src: url("assets/fonts/Nunito.woff2") format("woff2"); font-weight: 200 1000; font-display: swap; }
+
+:root {
+  /* the logo's own colours: navy outline, cream pile, carpet red, ribbon teal, foam pink */
+  --navy: #1b2143;
+  --navy-raised: #252c58;
+  --pile: #f6ebd4;
+  --pile-ink: #2b2542;
+  --rug: #c9321f;
+  --teal: #25a595;
+  --teal-ink: #08302c;
+  --foam: #e45cb8;
+  --text: #f1e9d8;
+  --muted: #b3b8d6;
+  --line: rgba(246, 235, 212, .18);
+  --display: "Fredoka", "Trebuchet MS", sans-serif;
+  --body: "Nunito", "Segoe UI", system-ui, sans-serif;
+  --wrap: 1120px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { margin: 0; background: var(--navy); color: var(--text); font: 400 17px/1.55 var(--body); -webkit-font-smoothing: antialiased; }
+img, video { max-width: 100%; display: block; }
+a { color: var(--pile); text-underline-offset: 3px; }
+a:hover { color: #fff; }
+:focus-visible { outline: 3px solid var(--foam); outline-offset: 3px; border-radius: 6px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.12; margin: 0; letter-spacing: -.005em; }
+h2 { font-size: clamp(1.7rem, 3.2vw, 2.3rem); }
+h3 { font-size: 1.2rem; }
+p { margin: 0 0 1em; max-width: 68ch; }
+.wrap { width: min(var(--wrap), 100% - 32px); margin-inline: auto; }
+.quiet { color: var(--muted); }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* top bar */
+.bar { position: sticky; top: 0; z-index: 20; background: rgba(27, 33, 67, .94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.bar .wrap { display: flex; align-items: center; gap: 20px; min-height: 60px; }
+.bar img { height: 34px; width: auto; }
+.bar nav { display: flex; gap: 18px; margin-left: auto; overflow-x: auto; white-space: nowrap; font: 500 .95rem var(--display); }
+.bar nav a { text-decoration: none; color: var(--muted); padding: 6px 0; }
+.bar nav a:hover { color: var(--pile); }
+
+/* buttons */
+.btn { display: inline-flex; align-items: baseline; gap: .5em; font: 600 1.02rem var(--display); text-decoration: none; padding: .72em 1.15em; border-radius: 999px; border: 2px solid var(--pile); color: var(--pile); background: transparent; cursor: pointer; }
+.btn small { font: 400 .82em var(--body); opacity: .8; }
+.btn:hover { background: var(--pile); color: var(--pile-ink); }
+.btn.main { background: var(--teal); border-color: var(--teal); color: var(--teal-ink); }
+.btn.main:hover { background: #3cc0af; border-color: #3cc0af; color: var(--teal-ink); }
+.btn.small { font-size: .88rem; padding: .4em .9em; border-width: 1.5px; }
+
+/* hero */
+.hero { padding: 44px 0 18px; }
+.hero .logo { width: min(430px, 78%); height: auto; margin-left: -6px; }
+.hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 18px 0 10px; }
+.hero .lede { font-size: 1.22rem; max-width: 46ch; margin-bottom: 22px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 14px; }
+.zips { display: contents; }
+[hidden] { display: none !important; }
+.hero .when { font-size: .98rem; }
+
+/* the before / after wipe */
+.wipe { --pos: 46%; position: relative; margin: 30px 0 10px; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #0f1330; touch-action: pan-y; }
+.wipe img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; -webkit-user-drag: none; }
+.wipe .dirty { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.wipe .blade { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 4px; margin-left: -2px; background: var(--pile); box-shadow: 0 0 0 1px rgba(27, 33, 67, .45); pointer-events: none; }
+.wipe .blade::after { content: ""; position: absolute; top: 50%; left: 50%; width: 22px; height: 76px; margin: -38px 0 0 -11px; border-radius: 11px; background: var(--pile); box-shadow: 0 2px 10px rgba(0, 0, 0, .35), inset 0 0 0 2px var(--teal); }
+.wipe .tag { position: absolute; bottom: 14px; font: 600 .95rem var(--display); background: rgba(27, 33, 67, .82); color: var(--pile); padding: .28em .8em; border-radius: 999px; pointer-events: none; }
+.wipe .tag.l { left: 14px; } .wipe .tag.r { right: 14px; }
+.wipe input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+.wipe:has(input:focus-visible) { outline: 3px solid var(--foam); outline-offset: 3px; }
+.wipe.intro { transition: --pos 1.5s cubic-bezier(.3, .1, .2, 1); }
+@property --pos { syntax: "<percentage>"; inherits: true; initial-value: 46%; }
+.printonly { display: none; }
+
+section { padding: 54px 0 8px; }
+section > .wrap > h2 { margin-bottom: 18px; }
+.intro-text { margin-bottom: 22px; }
+
+/* fact tag: a rug's care label, stitched like the logo's border */
+.pair { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 40px; align-items: start; }
+.label { background: var(--pile); color: var(--pile-ink); border-radius: 14px; padding: 10px; }
+.label .stitch { border: 2px dashed rgba(201, 50, 31, .55); border-radius: 8px; padding: 20px 22px 14px; }
+.label h2 { color: var(--rug); margin-bottom: 12px; }
+.label dl { margin: 0; }
+.label .row { display: grid; grid-template-columns: 11.5em 1fr; gap: 12px; padding: 7px 0; border-top: 1px solid rgba(43, 37, 66, .14); }
+.label .row:first-child { border-top: 0; }
+.label dt { font-weight: 700; font-size: .93rem; }
+.label dd { margin: 0; overflow-wrap: anywhere; }
+.label a { color: #7a1d12; }
+.label a:hover { color: var(--rug); }
+
+.rules { display: grid; gap: 22px; }
+.rules h3 { color: var(--pile); margin-bottom: 4px; }
+.rules p { margin: 0; color: var(--text); }
+.rules div { padding-left: 16px; border-left: 3px solid var(--teal); }
+
+/* copy blocks */
+.copy { border-top: 1px solid var(--line); padding: 18px 0 6px; display: grid; grid-template-columns: 10em minmax(0, 1fr) auto; gap: 18px; align-items: start; }
+.copy h3 { font-size: 1.05rem; color: var(--muted); font-weight: 500; }
+.copy .text p:last-child { margin-bottom: .6em; }
+.features { columns: 2; column-gap: 40px; padding-left: 1.1em; margin: 0; }
+.features li { break-inside: avoid; margin-bottom: .45em; }
+
+/* media */
+.trailer video { width: 100%; border-radius: 16px; background: #000; aspect-ratio: 16 / 9; }
+.under { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-top: 12px; }
+.group { margin-top: 30px; }
+.group h3 { margin-bottom: 4px; }
+.group > p { margin-bottom: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(245px, 1fr)); gap: 16px; padding: 0; margin: 0; list-style: none; }
+.grid.tall { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+.grid.shots { grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); }
+.tile { display: block; width: 100%; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; text-decoration: none; cursor: pointer; }
+.tile .pic { position: relative; border-radius: 12px; overflow: hidden; background: var(--navy-raised); aspect-ratio: 16 / 9; }
+.tall .tile .pic { aspect-ratio: 9 / 16; }
+.tile .pic img { width: 100%; height: 100%; object-fit: cover; }
+.tile:hover .pic { box-shadow: 0 0 0 3px var(--pile); }
+.tile .len { position: absolute; right: 8px; bottom: 8px; font: 600 .8rem var(--display); background: rgba(27, 33, 67, .86); color: var(--pile); padding: .1em .55em; border-radius: 999px; }
+.tile .play { position: absolute; left: 10px; bottom: 8px; width: 28px; height: 28px; border-radius: 50%; background: var(--pile); }
+.tile .play::after { content: ""; position: absolute; left: 11px; top: 8px; border: 6px solid transparent; border-left: 10px solid var(--pile-ink); border-right: 0; }
+.tile .cap { display: block; margin-top: 7px; font-size: .95rem; line-height: 1.35; }
+.tile .meta { display: block; font-size: .82rem; color: var(--muted); overflow-wrap: anywhere; }
+.art .pic { aspect-ratio: auto; height: 190px; display: grid; place-items: center; }
+.art .pic img { width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
+.art .pic.clear { background: repeating-conic-gradient(#313a70 0 25%, #2a3264 0 50%) 0 0 / 22px 22px; padding: 16px; }
+
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 8px 14px 8px 0; border-top: 1px solid var(--line); vertical-align: top; }
+thead th { border-top: 0; font: 500 .95rem var(--display); color: var(--muted); }
+td.key { font: 600 1rem var(--display); white-space: nowrap; color: var(--pile); }
+td.size { white-space: nowrap; text-align: right; padding-right: 0; }
+.tips { padding-left: 1.15em; margin: 0 0 8px; max-width: 72ch; }
+.tips li { margin-bottom: .6em; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; margin-top: 30px; }
+.two h3 { margin-bottom: 10px; }
+
+details { border-top: 1px solid var(--line); padding: 12px 0; }
+details summary { cursor: pointer; font: 600 1.08rem var(--display); }
+details > *:not(summary) { margin-top: 12px; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; font: 400 .9rem/1.5 var(--body); margin: 0; color: var(--text); }
+
+footer { margin-top: 60px; padding: 34px 0 48px; border-top: 1px solid var(--line); }
+footer p { margin-bottom: .5em; }
+
+dialog { border: 0; padding: 0; background: var(--navy-raised); color: var(--text); border-radius: 16px; width: min(1100px, 94vw); max-height: 94vh; overflow: auto; }
+dialog.tall { width: min(430px, 94vw); }
+dialog::backdrop { background: rgba(8, 10, 26, .82); }
+dialog video { width: 100%; max-height: 76vh; background: #000; }
+dialog .row { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; padding: 14px 18px; }
+dialog .row p { margin: 0; flex: 1 1 240px; }
+
+/* screen only: an A4 page is 794 px wide and must keep the two-column layout */
+@media screen and (max-width: 860px) {
+  .pair, .two { grid-template-columns: 1fr; gap: 28px; }
+  .copy { grid-template-columns: 1fr; gap: 6px; }
+  .features { columns: 1; }
+  .bar nav { display: none; }
+  .label .row { grid-template-columns: 1fr; gap: 0; }
+  section { padding-top: 40px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .wipe.intro { transition: none; } }
+
+@media print {
+  @page { size: A4; margin: 14mm 15mm; }
+  :root { --text: #1d1a2c; --muted: #555; --line: #cfc8b8; --pile: #1d1a2c; }
+  body { background: #fff; font-size: 10.6pt; line-height: 1.42; }
+  .bar, .wipe, .actions, .btn, .media, dialog, .noprint { display: none !important; }
+  .printonly { display: block; }
+  .wrap { width: 100%; }
+  .hero { padding: 0; }
+  .hero .logo { width: 50mm; margin: 0; }
+  .hero h1 { font-size: 20pt; margin: 2mm 0 1mm; }
+  .hero .lede { font-size: 12pt; margin-bottom: 2mm; max-width: none; }
+  .heroimg { width: 100%; height: 58mm; object-fit: cover; object-position: 50% 62%; border-radius: 3mm; margin: 3mm 0 0; }
+  section { padding: 5mm 0 0; }
+  .label, .rules div, .features, tr, li, p, pre { break-inside: avoid; }
+  h2, h3, summary { break-after: avoid; }
+  h2 { font-size: 15pt; margin-bottom: 2.5mm !important; }
+  h3 { font-size: 11pt; }
+  a { color: #7a1d12; }
+  .pair { grid-template-columns: 1fr; gap: 5mm; }
+  .label { background: #f6ebd4; padding: 2mm; }
+  .label .stitch { padding: 3mm 4mm 2mm; }
+  .label .row { padding: .9mm 0; grid-template-columns: 50mm 1fr; }
+  .rules { grid-template-columns: 1fr 1fr; gap: 3.5mm 7mm; }
+  .rules h3, td.key { color: #1d1a2c; }
+  .rules p { color: #1d1a2c; }
+  .copy { grid-template-columns: 26mm 1fr; padding: 2.5mm 0 0; gap: 4mm; }
+  .copy h3 { color: #555; }
+  p { max-width: none; margin-bottom: .6em; }
+  .two { gap: 8mm; margin-top: 4mm; }
+  th, td { padding: 1.1mm 3mm 1.1mm 0; }
+  details { border: 0; padding: 0; }
+  details summary { list-style: none; font-size: 11pt; margin-top: 3mm; }
+  details > *:not(summary) { display: block !important; margin-top: 1.5mm; }
+  pre { font-size: 8.4pt; color: #1d1a2c; }
+  footer { margin-top: 6mm; padding: 3mm 0 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a href="#top"><img src="assets/wordmark.png" alt="Refluff" width="300" height="73"></a>
+    <nav aria-label="Sections">
+      <a href="#facts">Facts</a>
+      <a href="#about">About</a>
+      <a href="#trailer">Trailer</a>
+      <a href="#footage">Footage</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#art">Logos and art</a>
+      <a href="#recording">Recording tips</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero wrap">
+    <img class="logo" src="assets/logo.png" alt="Refluff: Carpet Cleaning ASMR" width="900" height="265">
+    <h1>Press kit <span class="vh">for Refluff: Carpet Cleaning ASMR</span></h1>
+    <p class="lede">A first-person ASMR sim about washing filthy rugs clean, on a real simulation of water, foam and mud.</p>
+    <div class="actions">
+      <span class="zips" id="zips"><a class="btn main" href="https://github.com/dendoo/refluff-presskit/releases/latest/download/Refluff_Press_Kit.zip" download>Download everything <small>ZIP, 544 MB</small></a><a class="btn" href="Refluff_Press_Kit_Images_and_Text.zip" download>Images and text only <small>ZIP, 44 MB</small></a></span>
+      <a class="btn" href="https://store.steampowered.com/app/5304930/?utm_source=presskit">Steam page</a>
+      <a class="btn" href="mailto:vahovgames@gmail.com?subject=Refluff%20key%20request">Ask for a key</a>
+    </div>
+    <p class="when quiet">Out on 27 November 2026, on Steam for Windows PC. Wishlist it now.</p>
+
+    <div class="wipe" id="wipe">
+      <img src="assets/hero_after.jpg" alt="A clean red medallion rug on the tiled floor of the workshop, seen in first person." width="1920" height="1080">
+      <img class="dirty" src="assets/hero_before.jpg" alt="The same rug from the same spot, covered in dried mud crust." width="1920" height="1080">
+      <span class="blade" aria-hidden="true"></span>
+      <span class="tag l" aria-hidden="true">Filthy in</span>
+      <span class="tag r" aria-hidden="true">Fluffy out</span>
+      <input type="range" min="0" max="100" value="46" step="0.5" aria-label="Drag to wipe between the dirty rug and the clean rug">
+    </div>
+    <p class="quiet noprint">Drag across the picture. Same rug, same spot, before the job and after it; both frames are in the kit as thumbnail plates.</p>
+    <img class="heroimg printonly" src="assets/hero_split.jpg" alt="">
+  </div>
+
+  <section id="facts">
+    <div class="wrap pair">
+      <div class="label"><div class="stitch">
+        <h2>Fact sheet</h2>
+        <dl><div class="row"><dt>Game</dt><dd>Refluff: Carpet Cleaning ASMR</dd></div><div class="row"><dt>Developer and publisher</dt><dd>Vahov Games</dd></div><div class="row"><dt>Release date</dt><dd>27 November 2026</dd></div><div class="row"><dt>Platform</dt><dd>Windows PC, on Steam</dd></div><div class="row"><dt>Price</dt><dd>Announced at launch</dd></div><div class="row"><dt>Genre</dt><dd>First-person cleaning sim, cozy, ASMR</dd></div><div class="row"><dt>Players</dt><dd>Single player</dd></div><div class="row"><dt>Controls</dt><dd>Mouse and keyboard</dd></div><div class="row"><dt>Languages</dt><dd>Interface in 31 languages</dd></div><div class="row"><dt>Age rating</dt><dd>Suitable for all ages</dd></div><div class="row"><dt>Needs</dt><dd>A DirectX 12 graphics card (GTX 1060 6 GB or RX 580 8 GB and up)</dd></div><div class="row"><dt>Store page</dt><dd><a href="https://store.steampowered.com/app/5304930/?utm_source=presskit">https://store.steampowered.com/app/5304930/</a></dd></div><div class="row"><dt>Contact and keys</dt><dd><a href="mailto:vahovgames@gmail.com">vahovgames@gmail.com</a></dd></div></dl>
+      </div></div>
+      <div>
+        <h2 style="margin-bottom:18px">For creators</h2>
+        <div class="rules"><div><h3>Record it, stream it, monetize it</h3><p>You may publish videos and streams of Refluff on any platform, with or without commentary, and earn money from them. You do not need to ask: this kit is the permission.</p></div><div><h3>No embargo</h3><p>Post whenever you like, before or after the release on 27 November 2026.</p></div><div><h3>Nothing to mute</h3><p>The game has no music. Its sounds are real recordings under CC0, CC BY and Mixkit licences, credited in the game and on its Steam page. We do not register any game audio with Content ID or a similar system.</p></div><div><h3>Keys</h3><p>Write to vahovgames@gmail.com with a link to your channel. Keys go out one by one in private messages; none is in this kit.</p></div><div><h3>Say what you think</h3><p>A key never obliges you to post, or to be kind. If you received one for free, disclose it the way your platform and your local rules ask.</p></div><div><h3>Use anything in this kit</h3><p>The logos, key art, screenshots, trailer and footage are here to be used in coverage of the game: videos, thumbnails, articles, posts. Please keep the full title, Refluff: Carpet Cleaning ASMR, and link the Steam page.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="flow">
+    <div class="wrap">
+      <h2>About the game</h2>
+      <p class="intro-text quiet noprint">Ready to paste. The short text is the one on the Steam page.</p>
+      <div class="copy"><h3>One line</h3><div class="text" id="copy-one_line"><p>A first-person ASMR sim about washing filthy rugs clean, on a real simulation of water, foam and mud.</p></div><button class="btn small noprint" type="button" data-copy="copy-one_line">Copy</button></div><div class="copy"><h3>Short</h3><div class="text" id="copy-short"><p>Refluff is a first-person ASMR sim about running your own rug-washing workshop. Scrape, soak, foam, scrub and squeegee filthy carpets clean on a real fluid simulation. Get paid for every percent, upgrade your tools, take on bigger, dirtier rugs.</p></div><button class="btn small noprint" type="button" data-copy="copy-short">Copy</button></div><div class="copy"><h3>Long</h3><div class="text" id="copy-long"><p>Refluff is a calm first-person game about running your own rug-washing workshop. A filthy rug lands on the tiles, and you walk around it with the tool in your hand and do the job the way a carpet cleaner does: scrape off the dried crust, vacuum the dust, soak the pile, foam it, scrub the foam in with a rotary brush, squeegee the slurry onto the floor, pull the water out and dry the pile until it stands up again.</p><p>Nothing here is a picture being wiped away. Water soaks in and wicks through the fibres, dry dust turns to mud the moment it gets wet, foam heaps up and slowly settles, and whatever you push off the rug ends up on the floor tiles, where a detergent sprayer and a mop are waiting.</p><p>Every percent you clean pays on the spot. Spend it at the upgrade bench on stronger and wider tools, or on bigger, dirtier rugs that pay more. There are twelve rugs, from museum carpets to cartoon designs and a ring with a hole in the middle.</p><p>It is made for headphones. Every machine is a recording of a real one: motors spool up and wind down, the vacuum tube rattles the moment it swallows a crumb, water hisses, foam fizzes, bristles drag. There is no music, no timer, no enemies and no way to fail.</p></div><button class="btn small noprint" type="button" data-copy="copy-long">Copy</button></div>
+      <div class="copy">
+        <h3>Features</h3>
+        <ul class="features"><li>First person: walk around the rug with the tool in your hand</li><li>A real-time fluid simulation of water, foam, mud and dried crust</li><li>10 tools: eight for the carpet, plus a detergent sprayer and a mop for the floor</li><li>12 rugs: museum carpets, cartoon designs, a round rug and a ring</li><li>Paid for every cleaned percent; POWER and AREA upgrades for every tool; bigger, dirtier rugs to order</li><li>Two inspection lamps that show the dirt and the damp your eyes miss</li><li>Every machine sound is a recording of a real machine, and there is no music</li><li>No enemies, no fail state, no timer running out: clean at your own pace</li><li>A built-in learning guide that teaches every tool</li><li>Single player, mouse and keyboard, interface in 31 languages</li></ul>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="trailer" class="media">
+    <div class="wrap trailer">
+      <h2>Trailer</h2>
+      <video controls preload="none" poster="assets/trailer_poster.jpg" src="assets/trailer_web.mp4"></video>
+      <div class="under">
+        <a class="btn small" href="https://github.com/dendoo/refluff-presskit/releases/latest/download/Refluff_Trailer_1080p60.mp4" download>Download the trailer <small>MP4, 1080p60, 122 MB</small></a>
+        <a class="btn small" href="02_Trailer/Refluff_Trailer_Cover_1920x1080.png" download>Cover image <small>1920 × 1080</small></a>
+        <span class="quiet">One minute of gameplay with captions. No music: the sound is the game's own.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="footage" class="media">
+    <div class="wrap">
+      <h2>Gameplay footage</h2>
+      <p class="intro-text">Every clip is recorded gameplay at normal speed through the game&#x27;s own first-person camera, 60 frames a second. In the clean b-roll the HUD is switched off for editing; the sound is the game&#x27;s own, with no music, voice, captions or logo added. The vertical clips are 9:16 windows cut from the same 1440p capture. Three clips have a silent track and are marked so.</p>
+      <div class="group"><h3>Clean b-roll, no HUD</h3><p class="quiet">For your own edit: nothing on screen but the game.</p><ul class="grid"><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_01_workshop_walk_1080p60.mp4" data-size="5.2 MB" data-cap="Walking into the empty workshop (silent track)"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_01_workshop_walk_1080p60.jpg" alt=""><span class="play"></span><span class="len">4 s</span></span><span class="cap">Walking into the empty workshop (silent track)</span><span class="meta">Refluff_Broll_01_workshop_walk_1080p60.mp4, 5.2 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_02_dirty_rug_arrives_1080p60.mp4" data-size="2.0 MB" data-cap="A filthy rug flies in and lands on the tiles (silent track)"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_02_dirty_rug_arrives_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">A filthy rug flies in and lands on the tiles (silent track)</span><span class="meta">Refluff_Broll_02_dirty_rug_arrives_1080p60.mp4, 2.0 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_03_scraper_breaks_crust_1080p60.mp4" data-size="11 MB" data-cap="Scraper: dried mud crust cracks and flies"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_03_scraper_breaks_crust_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">Scraper: dried mud crust cracks and flies</span><span class="meta">Refluff_Broll_03_scraper_breaks_crust_1080p60.mp4, 11 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_04_dry_vacuum_1080p60.mp4" data-size="12 MB" data-cap="Dry vacuum: dust and crumbs, combed pile"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_04_dry_vacuum_1080p60.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Dry vacuum: dust and crumbs, combed pile</span><span class="meta">Refluff_Broll_04_dry_vacuum_1080p60.mp4, 12 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_05_hose_soaks_rug_1080p60.mp4" data-size="12 MB" data-cap="Hose: water spreads, dust turns to mud"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_05_hose_soaks_rug_1080p60.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Hose: water spreads, dust turns to mud</span><span class="meta">Refluff_Broll_05_hose_soaks_rug_1080p60.mp4, 12 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_06_foam_sprayer_1080p60.mp4" data-size="12 MB" data-cap="Foam sprayer: rows of pink foam"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_06_foam_sprayer_1080p60.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Foam sprayer: rows of pink foam</span><span class="meta">Refluff_Broll_06_foam_sprayer_1080p60.mp4, 12 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_07_rotary_brush_1080p60.mp4" data-size="12 MB" data-cap="Rotary brush scrubs the foam in"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_07_rotary_brush_1080p60.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Rotary brush scrubs the foam in</span><span class="meta">Refluff_Broll_07_rotary_brush_1080p60.mp4, 12 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_08_squeegee_wide_1080p60.mp4" data-size="16 MB" data-cap="Squeegee pulls lanes; slurry runs onto the tiles"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_08_squeegee_wide_1080p60.jpg" alt=""><span class="play"></span><span class="len">8 s</span></span><span class="cap">Squeegee pulls lanes; slurry runs onto the tiles</span><span class="meta">Refluff_Broll_08_squeegee_wide_1080p60.mp4, 16 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_09_squeegee_closeup_1080p60.mp4" data-size="14 MB" data-cap="Squeegee, 2x zoom: the pattern opens"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_09_squeegee_closeup_1080p60.jpg" alt=""><span class="play"></span><span class="len">7 s</span></span><span class="cap">Squeegee, 2x zoom: the pattern opens</span><span class="meta">Refluff_Broll_09_squeegee_closeup_1080p60.mp4, 14 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_10_wet_vacuum_closeup_1080p60.mp4" data-size="10 MB" data-cap="Wet vacuum, 2x zoom: the colours come back"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_10_wet_vacuum_closeup_1080p60.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Wet vacuum, 2x zoom: the colours come back</span><span class="meta">Refluff_Broll_10_wet_vacuum_closeup_1080p60.mp4, 10 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_11_wet_vacuum_wide_1080p60.mp4" data-size="11 MB" data-cap="Wet vacuum, wide view of the rug"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_11_wet_vacuum_wide_1080p60.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Wet vacuum, wide view of the rug</span><span class="meta">Refluff_Broll_11_wet_vacuum_wide_1080p60.mp4, 11 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_12_dryer_refluffs_pile_1080p60.mp4" data-size="11 MB" data-cap="Dryer: damp pile dries and stands up"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_12_dryer_refluffs_pile_1080p60.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Dryer: damp pile dries and stands up</span><span class="meta">Refluff_Broll_12_dryer_refluffs_pile_1080p60.mp4, 11 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_13_clean_pile_closeup_1080p60.mp4" data-size="15 MB" data-cap="Clean, dry pile in the sun, 2x zoom"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_13_clean_pile_closeup_1080p60.jpg" alt=""><span class="play"></span><span class="len">7 s</span></span><span class="cap">Clean, dry pile in the sun, 2x zoom</span><span class="meta">Refluff_Broll_13_clean_pile_closeup_1080p60.mp4, 15 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_14_clean_rug_flies_away_1080p60.mp4" data-size="2.1 MB" data-cap="Clean rug handed over: sparkles, it flies off"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_14_clean_rug_flies_away_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">Clean rug handed over: sparkles, it flies off</span><span class="meta">Refluff_Broll_14_clean_rug_flies_away_1080p60.mp4, 2.1 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_15_mop_floor_1080p60.mp4" data-size="14 MB" data-cap="Mop wipes the dried runoff off the tiles"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_15_mop_floor_1080p60.jpg" alt=""><span class="play"></span><span class="len">8 s</span></span><span class="cap">Mop wipes the dried runoff off the tiles</span><span class="meta">Refluff_Broll_15_mop_floor_1080p60.mp4, 14 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_16_inspection_lamps_1080p60.mp4" data-size="3.2 MB" data-cap="Dirt lamp (amber), then moisture lamp (blue)"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_16_inspection_lamps_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">Dirt lamp (amber), then moisture lamp (blue)</span><span class="meta">Refluff_Broll_16_inspection_lamps_1080p60.mp4, 3.2 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_17_biggest_rug_scraper_1080p60.mp4" data-size="9.4 MB" data-cap="The largest, dirtiest rug: all crust"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_17_biggest_rug_scraper_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">The largest, dirtiest rug: all crust</span><span class="meta">Refluff_Broll_17_biggest_rug_scraper_1080p60.mp4, 9.4 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_18_ring_rug_hose_1080p60.mp4" data-size="9.0 MB" data-cap="Ring-shaped rug under the hose"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_18_ring_rug_hose_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">Ring-shaped rug under the hose</span><span class="meta">Refluff_Broll_18_ring_rug_hose_1080p60.mp4, 9.0 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_19_dragon_rug_squeegee_1080p60.mp4" data-size="10 MB" data-cap="Cartoon dragon rug, squeegee through foam"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_19_dragon_rug_squeegee_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">Cartoon dragon rug, squeegee through foam</span><span class="meta">Refluff_Broll_19_dragon_rug_squeegee_1080p60.mp4, 10 MB</span></button></li><li><button class="tile" type="button" data-video="03_Gameplay_Broll_Clean/Refluff_Broll_20_clean_rug_background_plate_1080p60.mp4" data-size="17 MB" data-cap="Slow side-step over the clean rug: a plate for titles (silent track)"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Broll_20_clean_rug_background_plate_1080p60.jpg" alt=""><span class="play"></span><span class="len">8 s</span></span><span class="cap">Slow side-step over the clean rug: a plate for titles (silent track)</span><span class="meta">Refluff_Broll_20_clean_rug_background_plate_1080p60.mp4, 17 MB</span></button></li></ul></div><div class="group"><h3>With the HUD</h3><p class="quiet">What a player sees: meters, wallet, tool belt, the shop and the summary card.</p><ul class="grid"><li><button class="tile" type="button" data-video="04_Gameplay_With_HUD/Refluff_Gameplay_01_squeegee_with_hud_1080p60.mp4" data-size="17 MB" data-cap="Squeegee lanes; CLEAN bar and wallet tick up"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Gameplay_01_squeegee_with_hud_1080p60.jpg" alt=""><span class="play"></span><span class="len">8 s</span></span><span class="cap">Squeegee lanes; CLEAN bar and wallet tick up</span><span class="meta">Refluff_Gameplay_01_squeegee_with_hud_1080p60.mp4, 17 MB</span></button></li><li><button class="tile" type="button" data-video="04_Gameplay_With_HUD/Refluff_Gameplay_02_wet_vacuum_with_hud_1080p60.mp4" data-size="11 MB" data-cap="Wet vacuum; money arrives per cleaned percent"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Gameplay_02_wet_vacuum_with_hud_1080p60.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Wet vacuum; money arrives per cleaned percent</span><span class="meta">Refluff_Gameplay_02_wet_vacuum_with_hud_1080p60.mp4, 11 MB</span></button></li><li><button class="tile" type="button" data-video="04_Gameplay_With_HUD/Refluff_Gameplay_03_scraper_with_hud_1080p60.mp4" data-size="11 MB" data-cap="Scraper with the full HUD and tool belt"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Gameplay_03_scraper_with_hud_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">Scraper with the full HUD and tool belt</span><span class="meta">Refluff_Gameplay_03_scraper_with_hud_1080p60.mp4, 11 MB</span></button></li><li><button class="tile" type="button" data-video="04_Gameplay_With_HUD/Refluff_Gameplay_04_new_rug_arrives_with_hud_1080p60.mp4" data-size="2.0 MB" data-cap="A new job: CLEAN 0 % (silent track)"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Gameplay_04_new_rug_arrives_with_hud_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">A new job: CLEAN 0 % (silent track)</span><span class="meta">Refluff_Gameplay_04_new_rug_arrives_with_hud_1080p60.mp4, 2.0 MB</span></button></li><li><button class="tile" type="button" data-video="04_Gameplay_With_HUD/Refluff_Gameplay_05_handover_summary_card_1080p60.mp4" data-size="2.5 MB" data-cap="Hand-over and the job summary card"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Gameplay_05_handover_summary_card_1080p60.jpg" alt=""><span class="play"></span><span class="len">8 s</span></span><span class="cap">Hand-over and the job summary card</span><span class="meta">Refluff_Gameplay_05_handover_summary_card_1080p60.mp4, 2.5 MB</span></button></li><li><button class="tile" type="button" data-video="04_Gameplay_With_HUD/Refluff_Gameplay_06_upgrade_bench_and_shop_1080p60.mp4" data-size="3.9 MB" data-cap="Walk to the bench, open the shop, buy upgrades"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Gameplay_06_upgrade_bench_and_shop_1080p60.jpg" alt=""><span class="play"></span><span class="len">10 s</span></span><span class="cap">Walk to the bench, open the shop, buy upgrades</span><span class="meta">Refluff_Gameplay_06_upgrade_bench_and_shop_1080p60.mp4, 3.9 MB</span></button></li><li><button class="tile" type="button" data-video="04_Gameplay_With_HUD/Refluff_Gameplay_07_inspection_lamps_with_hud_1080p60.mp4" data-size="3.3 MB" data-cap="Both inspection lamps with the HUD"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Gameplay_07_inspection_lamps_with_hud_1080p60.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">Both inspection lamps with the HUD</span><span class="meta">Refluff_Gameplay_07_inspection_lamps_with_hud_1080p60.mp4, 3.3 MB</span></button></li></ul></div><div class="group"><h3>Vertical, 9:16</h3><p class="quiet">For Shorts, Reels and TikTok. The first one is a ready 20-second edit.</p><ul class="grid tall"><li><button class="tile" type="button" data-video="05_Vertical_9x16/Refluff_Vertical_00_clean_edit_20s_1080x1920.mp4" data-size="41 MB" data-cap="Ready 20-second edit: six tools, no captions" data-tall="1"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Vertical_00_clean_edit_20s_1080x1920.jpg" alt=""><span class="play"></span><span class="len">20 s</span></span><span class="cap">Ready 20-second edit: six tools, no captions</span><span class="meta">Refluff_Vertical_00_clean_edit_20s_1080x1920.mp4, 41 MB</span></button></li><li><button class="tile" type="button" data-video="05_Vertical_9x16/Refluff_Vertical_01_scraper_1080x1920.mp4" data-size="11 MB" data-cap="Scraper breaks the crust" data-tall="1"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Vertical_01_scraper_1080x1920.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">Scraper breaks the crust</span><span class="meta">Refluff_Vertical_01_scraper_1080x1920.mp4, 11 MB</span></button></li><li><button class="tile" type="button" data-video="05_Vertical_9x16/Refluff_Vertical_02_hose_1080x1920.mp4" data-size="12 MB" data-cap="Hose turns dust to mud" data-tall="1"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Vertical_02_hose_1080x1920.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Hose turns dust to mud</span><span class="meta">Refluff_Vertical_02_hose_1080x1920.mp4, 12 MB</span></button></li><li><button class="tile" type="button" data-video="05_Vertical_9x16/Refluff_Vertical_03_rotary_brush_1080x1920.mp4" data-size="12 MB" data-cap="Rotary brush in pink foam" data-tall="1"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Vertical_03_rotary_brush_1080x1920.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Rotary brush in pink foam</span><span class="meta">Refluff_Vertical_03_rotary_brush_1080x1920.mp4, 12 MB</span></button></li><li><button class="tile" type="button" data-video="05_Vertical_9x16/Refluff_Vertical_04_squeegee_1080x1920.mp4" data-size="12 MB" data-cap="Squeegee opens the pattern" data-tall="1"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Vertical_04_squeegee_1080x1920.jpg" alt=""><span class="play"></span><span class="len">5 s</span></span><span class="cap">Squeegee opens the pattern</span><span class="meta">Refluff_Vertical_04_squeegee_1080x1920.mp4, 12 MB</span></button></li><li><button class="tile" type="button" data-video="05_Vertical_9x16/Refluff_Vertical_05_wet_vacuum_1080x1920.mp4" data-size="11 MB" data-cap="Wet vacuum, colours return" data-tall="1"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Vertical_05_wet_vacuum_1080x1920.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Wet vacuum, colours return</span><span class="meta">Refluff_Vertical_05_wet_vacuum_1080x1920.mp4, 11 MB</span></button></li><li><button class="tile" type="button" data-video="05_Vertical_9x16/Refluff_Vertical_06_clean_pile_1080x1920.mp4" data-size="12 MB" data-cap="Clean, dry pile" data-tall="1"><span class="pic"><img loading="lazy" src="assets/posters/Refluff_Vertical_06_clean_pile_1080x1920.jpg" alt=""><span class="play"></span><span class="len">6 s</span></span><span class="cap">Clean, dry pile</span><span class="meta">Refluff_Vertical_06_clean_pile_1080x1920.mp4, 12 MB</span></button></li></ul></div>
+    </div>
+  </section>
+
+  <section id="screenshots" class="media">
+    <div class="wrap">
+      <h2>Screenshots</h2>
+      <p class="intro-text quiet">Twelve frames at 2560 × 1440, taken through the game camera. A click opens the full file.</p>
+      <ul class="grid shots"><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_01_squeegee_reveal_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_01_squeegee_reveal_2560x1440.jpg" alt="A squeegee pulls lanes through pink foam and the clean pattern shows"></span><span class="cap">A squeegee pulls lanes through pink foam and the clean pattern shows</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_02_hose_ring_rug_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_02_hose_ring_rug_2560x1440.jpg" alt="The hose soaks a ring-shaped rug"></span><span class="cap">The hose soaks a ring-shaped rug</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_03_upgrade_shop_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_03_upgrade_shop_2560x1440.jpg" alt="The upgrade shop: POWER and AREA for ten tools"></span><span class="cap">The upgrade shop: POWER and AREA for ten tools</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_04_dirt_lamp_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_04_dirt_lamp_2560x1440.jpg" alt="The dirt lamp: what is still soiled glows amber"></span><span class="cap">The dirt lamp: what is still soiled glows amber</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_05_scraper_crust_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_05_scraper_crust_2560x1440.jpg" alt="The scraper breaks a lane through dried mud crust"></span><span class="cap">The scraper breaks a lane through dried mud crust</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_06_dragon_squeegee_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_06_dragon_squeegee_2560x1440.jpg" alt="A cartoon dragon rug under the squeegee"></span><span class="cap">A cartoon dragon rug under the squeegee</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_07_brush_foam_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_07_brush_foam_2560x1440.jpg" alt="The rotary brush scrubs rows of foam"></span><span class="cap">The rotary brush scrubs rows of foam</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_08_mop_floor_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_08_mop_floor_2560x1440.jpg" alt="The mop wipes dried runoff off the tiles"></span><span class="cap">The mop wipes dried runoff off the tiles</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_09_wet_vacuum_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_09_wet_vacuum_2560x1440.jpg" alt="The wet vacuum brings the colours back"></span><span class="cap">The wet vacuum brings the colours back</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_10_handover_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_10_handover_2560x1440.jpg" alt="Hand-over: the rug is delivered, the job is summed up"></span><span class="cap">Hand-over: the rug is delivered, the job is summed up</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_11_dry_vacuum_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_11_dry_vacuum_2560x1440.jpg" alt="The dry vacuum draws a clean lane through dust"></span><span class="cap">The dry vacuum draws a clean lane through dust</span></a></li><li><a class="tile" href="06_Screenshots/Refluff_Screenshot_12_workbench_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Screenshot_12_workbench_2560x1440.jpg" alt="The upgrade bench in the workshop"></span><span class="cap">The upgrade bench in the workshop</span></a></li></ul>
+    </div>
+  </section>
+
+  <section id="art" class="media">
+    <div class="wrap">
+      <h2>Logos, key art and thumbnail plates</h2>
+      <p class="intro-text quiet">The logos are transparent PNGs with their own outline, so they sit on light and dark pictures alike.</p>
+      <ul class="grid art"><li><a class="tile" href="07_Logos_and_Icon/Refluff_Logo_Full_3015x887.png" target="_blank" rel="noopener"><span class="pic clear"><img loading="lazy" src="assets/thumbs/Refluff_Logo_Full_3015x887.png" alt=""></span><span class="cap">Full logo</span><span class="meta">Refluff_Logo_Full_3015x887.png, 3.4 MB</span></a></li><li><a class="tile" href="07_Logos_and_Icon/Refluff_Logo_Wordmark_3015x731.png" target="_blank" rel="noopener"><span class="pic clear"><img loading="lazy" src="assets/thumbs/Refluff_Logo_Wordmark_3015x731.png" alt=""></span><span class="cap">Wordmark</span><span class="meta">Refluff_Logo_Wordmark_3015x731.png, 2.8 MB</span></a></li><li><a class="tile" href="07_Logos_and_Icon/Refluff_Icon_1024x1024.png" target="_blank" rel="noopener"><span class="pic clear"><img loading="lazy" src="assets/thumbs/Refluff_Icon_1024x1024.png" alt=""></span><span class="cap">Icon</span><span class="meta">Refluff_Icon_1024x1024.png, 1.1 MB</span></a></li><li><a class="tile" href="08_Key_Art_and_Thumbnails/Refluff_KeyArt_Main_1232x706.png" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_KeyArt_Main_1232x706.jpg" alt=""></span><span class="cap">Key art with logo</span><span class="meta">Refluff_KeyArt_Main_1232x706.png, 1.4 MB</span></a></li><li><a class="tile" href="08_Key_Art_and_Thumbnails/Refluff_KeyArt_Wide_920x430.png" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_KeyArt_Wide_920x430.jpg" alt=""></span><span class="cap">Key art, wide</span><span class="meta">Refluff_KeyArt_Wide_920x430.png, 0.7 MB</span></a></li><li><a class="tile" href="08_Key_Art_and_Thumbnails/Refluff_KeyArt_Vertical_748x896.png" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_KeyArt_Vertical_748x896.jpg" alt=""></span><span class="cap">Key art, vertical</span><span class="meta">Refluff_KeyArt_Vertical_748x896.png, 1.1 MB</span></a></li><li><a class="tile" href="08_Key_Art_and_Thumbnails/Refluff_KeyArt_Portrait_600x900.png" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_KeyArt_Portrait_600x900.jpg" alt=""></span><span class="cap">Key art, portrait</span><span class="meta">Refluff_KeyArt_Portrait_600x900.png, 0.9 MB</span></a></li><li><a class="tile" href="08_Key_Art_and_Thumbnails/Refluff_KeyArt_Banner_no_logo_3840x1240.png" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_KeyArt_Banner_no_logo_3840x1240.jpg" alt=""></span><span class="cap">Banner, no logo</span><span class="meta">Refluff_KeyArt_Banner_no_logo_3840x1240.png, 7.9 MB</span></a></li><li><a class="tile" href="08_Key_Art_and_Thumbnails/Refluff_KeyArt_no_logo_3840x2160.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_KeyArt_no_logo_3840x2160.jpg" alt=""></span><span class="cap">Key art, no logo, 4K</span><span class="meta">Refluff_KeyArt_no_logo_3840x2160.jpg, 3.0 MB</span></a></li><li><a class="tile" href="08_Key_Art_and_Thumbnails/Refluff_Thumb_Before_dirty_rug_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Thumb_Before_dirty_rug_2560x1440.jpg" alt=""></span><span class="cap">Before: the dirty rug</span><span class="meta">Refluff_Thumb_Before_dirty_rug_2560x1440.jpg, 1.3 MB</span></a></li><li><a class="tile" href="08_Key_Art_and_Thumbnails/Refluff_Thumb_After_clean_rug_2560x1440.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Thumb_After_clean_rug_2560x1440.jpg" alt=""></span><span class="cap">After: the same rug, clean</span><span class="meta">Refluff_Thumb_After_clean_rug_2560x1440.jpg, 1.5 MB</span></a></li><li><a class="tile" href="08_Key_Art_and_Thumbnails/Refluff_Thumb_Before_After_split_1920x1080.jpg" target="_blank" rel="noopener"><span class="pic"><img loading="lazy" src="assets/thumbs/Refluff_Thumb_Before_After_split_1920x1080.jpg" alt=""></span><span class="cap">Before / after in one frame</span><span class="meta">Refluff_Thumb_Before_After_split_1920x1080.jpg, 0.8 MB</span></a></li></ul>
+    </div>
+  </section>
+
+  <section id="recording" class="flow">
+    <div class="wrap">
+      <h2>Before you record</h2>
+      <ul class="tips"><li>Capture the game&#x27;s sound clean and listen on headphones: the sound is half the game.</li><li>Hold the right mouse button for a 2x close view. Small tool heads read far better on video that way.</li><li>X switches on the dirt lamp and Z the moisture lamp. The room goes dark and whatever is left on the rug glows: a ready-made reveal.</li><li>The first rugs are small and only dusty, on purpose. For heavy crust and mud, buy Carpet dirt and Carpet size at the upgrade bench (Carpets tab). They apply to the next rug, and R brings a new rug at once.</li><li>The dirty slurry leaves the rug with water. If a rug will not reach 100 %, flood it with the hose and squeegee it again: the wet vacuum alone will not take the last of it.</li><li>F1 opens the learning guide. Hide guidance in it takes the lesson card out of your footage.</li><li>Menu, then Language, switches between the 31 languages while the game runs.</li></ul>
+      <div class="two">
+        <div>
+          <h3>Controls</h3>
+          <table><tbody><tr><td class="key">W A S D or arrows</td><td>Walk</td></tr><tr><td class="key">Shift</td><td>Walk faster</td></tr><tr><td class="key">Mouse</td><td>Look around</td></tr><tr><td class="key">Left mouse button</td><td>Use the tool</td></tr><tr><td class="key">Right mouse button, held</td><td>2x close view</td></tr><tr><td class="key">1 to 9, 0 or the wheel</td><td>Pick a tool</td></tr><tr><td class="key">E</td><td>Open the upgrades at the bench</td></tr><tr><td class="key">X / Z</td><td>Dirt lamp / moisture lamp</td></tr><tr><td class="key">H</td><td>Hand over the clean rug</td></tr><tr><td class="key">R</td><td>Take a new rug</td></tr><tr><td class="key">F1</td><td>Learning guide</td></tr><tr><td class="key">Esc</td><td>Menu: volume, language, credits</td></tr></tbody></table>
+        </div>
+        <div>
+          <h3>The ten tools, in working order</h3>
+          <table><tbody><tr><td class="key">1</td><td><strong>Scraper</strong>: breaks the dried crust</td></tr><tr><td class="key">2</td><td><strong>Dry vacuum</strong>: picks up dust and crumbs</td></tr><tr><td class="key">3</td><td><strong>Hose</strong>: soaks the pile and rinses it</td></tr><tr><td class="key">4</td><td><strong>Foam sprayer</strong>: lays down pink cleaning foam</td></tr><tr><td class="key">5</td><td><strong>Brush</strong>: a rotary machine that scrubs the foam in</td></tr><tr><td class="key">6</td><td><strong>Squeegee</strong>: pushes the dirty water off the rug</td></tr><tr><td class="key">7</td><td><strong>Wet vacuum</strong>: pulls the water out of the pile</td></tr><tr><td class="key">8</td><td><strong>Dryer</strong>: dries the pile until it stands up</td></tr><tr><td class="key">9</td><td><strong>Detergent</strong>: loosens dried dirt on the floor tiles</td></tr><tr><td class="key">0</td><td><strong>Mop</strong>: wipes the tiles clean</td></tr></tbody></table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kit" class="flow">
+    <div class="wrap">
+      <h2>What is in the kit</h2>
+      <table>
+        <thead><tr><th>Folder</th><th>Inside</th><th>Size</th></tr></thead>
+        <tbody><tr><td class="key">01_Factsheet_and_Copy</td><td>Fact sheet, descriptions, the guide for creators, sound credits: plain text</td><td class="size">14 KB</td></tr><tr><td class="key">02_Trailer</td><td>The one-minute trailer and its cover image</td><td class="size">124 MB</td></tr><tr><td class="key">03_Gameplay_Broll_Clean</td><td>20 clips without HUD, captions or logo, for your own edit: 1920 x 1080, 60 fps</td><td class="size">209 MB</td></tr><tr><td class="key">04_Gameplay_With_HUD</td><td>7 clips with the game&#x27;s HUD, shop and summary card: 1920 x 1080, 60 fps</td><td class="size">50 MB</td></tr><tr><td class="key">05_Vertical_9x16</td><td>A 20-second clean edit and 6 tool clips in 9:16: 1080 x 1920, 60 fps</td><td class="size">112 MB</td></tr><tr><td class="key">06_Screenshots</td><td>12 screenshots: 2560 x 1440</td><td class="size">17 MB</td></tr><tr><td class="key">07_Logos_and_Icon</td><td>Logo, wordmark and icon as transparent PNG</td><td class="size">7.3 MB</td></tr><tr><td class="key">08_Key_Art_and_Thumbnails</td><td>Key art with and without the logo, before / after plates for thumbnails</td><td class="size">19 MB</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="small-print" class="flow">
+    <div class="wrap">
+      <h2>Small print</h2>
+      <details open>
+        <summary>How AI was used</summary>
+        <p>As stated on the Steam page: some 3D models in this game, the cleaning tool heads, were created with an AI 3D model generation tool and then edited by hand. Everything else was made without generative AI: the simulation and code, the sound effects (real recordings), the carpet photographs and all store page artwork. No content is generated by AI while you play.</p>
+      </details>
+      <details>
+        <summary>Sound credits</summary>
+        <p>If you reuse the game's sound on its own, outside a video of the game, these credits go with it.</p>
+        <pre>Sound effects from Freesound.org, cut and levelled for this game:
+&quot;bissell_carpet_cleaner_vacuum_01.wav&quot; by joedeshon (https://freesound.org/s/79236/), licensed under CC BY 4.0
+&quot;loud metal fan turned on and off a few times (machine starting up)&quot; by busabx (https://freesound.org/s/726634/), licensed under CC BY 4.0
+&quot;Floor Buffer Sound&quot; by prometheus888 (https://freesound.org/s/864976/), licensed under CC BY 4.0
+&quot;shovelling scraping water&quot; by adda_records (https://freesound.org/s/519974/), licensed under CC BY 4.0
+&quot;26_Fregona_Agua.mp3&quot; by byronabadia (https://freesound.org/s/444946/), licensed under CC BY 4.0
+&quot;Whipped Cream Spray Can&quot; by kev_durr (https://freesound.org/s/321055/), licensed under CC BY 4.0
+&quot;BerberCarpetScratching.wav&quot; by akent (https://freesound.org/s/178499/), licensed under CC BY 3.0
+&quot;Vacuum Cleaner, On Idle Off, Close, A.wav&quot; by InspectorJ (www.jshaw.co.uk, https://freesound.org/s/430632/), licensed under CC BY 4.0
+&quot;Coins 2&quot; by DominikBraun (https://freesound.org/s/483507/), licensed under CC BY 4.0 (pitch and gain varied during playback)
+Licences: https://creativecommons.org/licenses/by/4.0/ and https://creativecommons.org/licenses/by/3.0/
+Additional sounds: Mixkit (mixkit.co) and Freesound users kyles, richwise, RossJuterbock, crcavol, yehdawgo (CC0).</pre>
+      </details>
+      <details>
+        <summary>System requirements</summary>
+        <p><strong>Minimum.</strong> Windows 10 64-bit (1909 or later), Intel Core i5-8400 or AMD Ryzen 5 2600, 8 GB RAM, DirectX 12 graphics card with compute shader support and 4 GB VRAM (GeForce GTX 1060 6 GB or Radeon RX 580 8 GB), 2 GB of storage.</p><p><strong>Recommended.</strong> Windows 11 64-bit, Intel Core i7-10750H or AMD Ryzen 7 5800X, 16 GB RAM, GeForce RTX 3060 or Radeon RX 6600 XT, 2 GB of storage: 1440p at 60+ fps.</p>
+      </details>
+      <details>
+        <summary>All 31 languages</summary>
+        <p>English, Arabic, Bulgarian, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, Finnish, French, German, Greek, Hungarian, Indonesian, Italian, Japanese, Korean, Malay, Norwegian, Polish, Portuguese (Brazil), Portuguese (Portugal), Romanian, Russian, Spanish (Spain), Spanish (Latin America), Swedish, Thai, Turkish, Ukrainian, Vietnamese</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Refluff: Carpet Cleaning ASMR</strong> by Vahov Games. Out on 27 November 2026 on Steam.</p>
+    <p>Store page: <a href="https://store.steampowered.com/app/5304930/?utm_source=presskit">https://store.steampowered.com/app/5304930/</a></p>
+    <p>Questions, keys, anything missing from this kit: <a href="mailto:vahovgames@gmail.com">vahovgames@gmail.com</a></p>
+    <p class="quiet">Kit updated 2026-11-17.</p>
+  </div>
+</footer>
+
+<dialog id="player" aria-label="Clip player">
+  <video controls playsinline></video>
+  <div class="row">
+    <p id="player-cap"></p>
+    <a class="btn small main" id="player-dl" href="#" download>Download</a>
+    <button class="btn small" id="player-close" type="button">Close</button>
+  </div>
+</dialog>
+
+<script>
+(function () {
+  // on paper (and in the kit's PDF, printed from "index.html?print") nothing stays folded
+  function unfold() { document.querySelectorAll("details").forEach(function (d) { d.open = true; }); }
+  if (location.search.indexOf("print") >= 0) unfold();
+  window.addEventListener("beforeprint", unfold);
+
+  // a copy opened from disk (an unpacked ZIP) has no use for the ZIP buttons
+  var zips = document.getElementById("zips");
+  if (zips && location.protocol === "file:") zips.hidden = true;
+
+  // before / after wipe: the range input drives it, so it works by pointer and by keyboard
+  var wipe = document.getElementById("wipe"), range = wipe.querySelector("input");
+  function set(v) { wipe.style.setProperty("--pos", v + "%"); }
+  range.addEventListener("input", function () { wipe.classList.remove("intro"); set(range.value); });
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches && CSS.registerProperty !== undefined) {
+    set(100);
+    requestAnimationFrame(function () { requestAnimationFrame(function () { wipe.classList.add("intro"); set(range.value); }); });
+  }
+
+  // copy buttons
+  document.querySelectorAll("[data-copy]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var text = document.getElementById(b.dataset.copy).innerText.trim();
+      var done = function () { var t = b.textContent; b.textContent = "Copied"; setTimeout(function () { b.textContent = t; }, 1400); };
+      if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(done); return; }
+      var ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); done(); } finally { ta.remove(); }
+    });
+  });
+
+  // clip player
+  var dlg = document.getElementById("player"), vid = dlg.querySelector("video");
+  document.querySelectorAll("[data-video]").forEach(function (t) {
+    t.addEventListener("click", function () {
+      vid.src = t.dataset.video;
+      dlg.classList.toggle("tall", t.dataset.tall === "1");
+      document.getElementById("player-cap").textContent = t.dataset.cap;
+      var dl = document.getElementById("player-dl"); dl.href = t.dataset.video; dl.textContent = "Download (" + t.dataset.size + ")";
+      dlg.showModal(); vid.play().catch(function () {});
+    });
+  });
+  function stop() { vid.pause(); vid.removeAttribute("src"); vid.load(); }
+  document.getElementById("player-close").addEventListener("click", function () { dlg.close(); });
+  dlg.addEventListener("close", stop);
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+})();
+</script>
+</body>
+</html>

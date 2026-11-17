@@ -1,0 +1,20 @@
+REFLUFF: CARPET CLEANING ASMR
+SOUND CREDITS
+========================================================================
+
+The game's sounds are real recordings. These are the credits their licences ask for; they
+are shown in the game and on its Steam page. A video or stream of the game does not need
+them repeated. If you reuse the game's sound on its own, keep the credits with it.
+
+Sound effects from Freesound.org, cut and levelled for this game:
+"bissell_carpet_cleaner_vacuum_01.wav" by joedeshon (https://freesound.org/s/79236/), licensed under CC BY 4.0
+"loud metal fan turned on and off a few times (machine starting up)" by busabx (https://freesound.org/s/726634/), licensed under CC BY 4.0
+"Floor Buffer Sound" by prometheus888 (https://freesound.org/s/864976/), licensed under CC BY 4.0
+"shovelling scraping water" by adda_records (https://freesound.org/s/519974/), licensed under CC BY 4.0
+"26_Fregona_Agua.mp3" by byronabadia (https://freesound.org/s/444946/), licensed under CC BY 4.0
+"Whipped Cream Spray Can" by kev_durr (https://freesound.org/s/321055/), licensed under CC BY 4.0
+"BerberCarpetScratching.wav" by akent (https://freesound.org/s/178499/), licensed under CC BY 3.0
+"Vacuum Cleaner, On Idle Off, Close, A.wav" by InspectorJ (www.jshaw.co.uk, https://freesound.org/s/430632/), licensed under CC BY 4.0
+"Coins 2" by DominikBraun (https://freesound.org/s/483507/), licensed under CC BY 4.0 (pitch and gain varied during playback)
+Licences: https://creativecommons.org/licenses/by/4.0/ and https://creativecommons.org/licenses/by/3.0/
+Additional sounds: Mixkit (mixkit.co) and Freesound users kyles, richwise, RossJuterbock, crcavol, yehdawgo (CC0).

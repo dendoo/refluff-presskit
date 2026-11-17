@@ -1,0 +1,126 @@
+REFLUFF: CARPET CLEANING ASMR
+GUIDE FOR CREATORS (updated 2026-11-17)
+========================================================================
+
+RECORD IT, STREAM IT, MONETIZE IT
+You may publish videos and streams of Refluff on any platform, with or without commentary,
+and earn money from them. You do not need to ask: this kit is the permission.
+
+NO EMBARGO
+Post whenever you like, before or after the release on 27 November 2026.
+
+NOTHING TO MUTE
+The game has no music. Its sounds are real recordings under CC0, CC BY and Mixkit licences,
+credited in the game and on its Steam page. We do not register any game audio with Content
+ID or a similar system.
+
+KEYS
+Write to vahovgames@gmail.com with a link to your channel. Keys go out one by one in private
+messages; none is in this kit.
+
+SAY WHAT YOU THINK
+A key never obliges you to post, or to be kind. If you received one for free, disclose it
+the way your platform and your local rules ask.
+
+USE ANYTHING IN THIS KIT
+The logos, key art, screenshots, trailer and footage are here to be used in coverage of the
+game: videos, thumbnails, articles, posts. Please keep the full title, Refluff: Carpet
+Cleaning ASMR, and link the Steam page.
+
+========================================================================
+BEFORE YOU RECORD
+========================================================================
+
+- Capture the game's sound clean and listen on headphones: the sound is half the game.
+- Hold the right mouse button for a 2x close view. Small tool heads read far better on video
+  that way.
+- X switches on the dirt lamp and Z the moisture lamp. The room goes dark and whatever is
+  left on the rug glows: a ready-made reveal.
+- The first rugs are small and only dusty, on purpose. For heavy crust and mud, buy Carpet
+  dirt and Carpet size at the upgrade bench (Carpets tab). They apply to the next rug, and R
+  brings a new rug at once.
+- The dirty slurry leaves the rug with water. If a rug will not reach 100 %, flood it with
+  the hose and squeegee it again: the wet vacuum alone will not take the last of it.
+- F1 opens the learning guide. Hide guidance in it takes the lesson card out of your
+  footage.
+- Menu, then Language, switches between the 31 languages while the game runs.
+
+CONTROLS
+W A S D or arrows           Walk
+Shift                       Walk faster
+Mouse                       Look around
+Left mouse button           Use the tool
+Right mouse button, held    2x close view
+1 to 9, 0 or the wheel      Pick a tool
+E                           Open the upgrades at the bench
+X / Z                       Dirt lamp / moisture lamp
+H                           Hand over the clean rug
+R                           Take a new rug
+F1                          Learning guide
+Esc                         Menu: volume, language, credits
+
+THE TEN TOOLS, IN WORKING ORDER
+1  Scraper         breaks the dried crust
+2  Dry vacuum      picks up dust and crumbs
+3  Hose            soaks the pile and rinses it
+4  Foam sprayer    lays down pink cleaning foam
+5  Brush           a rotary machine that scrubs the foam in
+6  Squeegee        pushes the dirty water off the rug
+7  Wet vacuum      pulls the water out of the pile
+8  Dryer           dries the pile until it stands up
+9  Detergent       loosens dried dirt on the floor tiles
+0  Mop             wipes the tiles clean
+
+========================================================================
+THE FOOTAGE IN THIS KIT
+========================================================================
+
+Every clip is recorded gameplay at normal speed through the game's own first-person camera,
+60 frames a second. In the clean b-roll the HUD is switched off for editing; the sound is
+the game's own, with no music, voice, captions or logo added. The vertical clips are 9:16
+windows cut from the same 1440p capture. Three clips have a silent track and are marked so.
+
+CLEAN B-ROLL (no HUD)  [03_Gameplay_Broll_Clean]
+  Refluff_Broll_01_workshop_walk_1080p60.mp4                  4.0 s  Walking into the empty workshop (silent track)
+  Refluff_Broll_02_dirty_rug_arrives_1080p60.mp4              5.0 s  A filthy rug flies in and lands on the tiles (silent track)
+  Refluff_Broll_03_scraper_breaks_crust_1080p60.mp4           5.3 s  Scraper: dried mud crust cracks and flies
+  Refluff_Broll_04_dry_vacuum_1080p60.mp4                     5.5 s  Dry vacuum: dust and crumbs, combed pile
+  Refluff_Broll_05_hose_soaks_rug_1080p60.mp4                 5.8 s  Hose: water spreads, dust turns to mud
+  Refluff_Broll_06_foam_sprayer_1080p60.mp4                   5.5 s  Foam sprayer: rows of pink foam
+  Refluff_Broll_07_rotary_brush_1080p60.mp4                   5.5 s  Rotary brush scrubs the foam in
+  Refluff_Broll_08_squeegee_wide_1080p60.mp4                  8.0 s  Squeegee pulls lanes; slurry runs onto the tiles
+  Refluff_Broll_09_squeegee_closeup_1080p60.mp4               7.2 s  Squeegee, 2x zoom: the pattern opens
+  Refluff_Broll_10_wet_vacuum_closeup_1080p60.mp4             5.6 s  Wet vacuum, 2x zoom: the colours come back
+  Refluff_Broll_11_wet_vacuum_wide_1080p60.mp4                5.6 s  Wet vacuum, wide view of the rug
+  Refluff_Broll_12_dryer_refluffs_pile_1080p60.mp4            5.5 s  Dryer: damp pile dries and stands up
+  Refluff_Broll_13_clean_pile_closeup_1080p60.mp4             7.2 s  Clean, dry pile in the sun, 2x zoom
+  Refluff_Broll_14_clean_rug_flies_away_1080p60.mp4           4.7 s  Clean rug handed over: sparkles, it flies off
+  Refluff_Broll_15_mop_floor_1080p60.mp4                      8.0 s  Mop wipes the dried runoff off the tiles
+  Refluff_Broll_16_inspection_lamps_1080p60.mp4               4.9 s  Dirt lamp (amber), then moisture lamp (blue)
+  Refluff_Broll_17_biggest_rug_scraper_1080p60.mp4            4.9 s  The largest, dirtiest rug: all crust
+  Refluff_Broll_18_ring_rug_hose_1080p60.mp4                  5.0 s  Ring-shaped rug under the hose
+  Refluff_Broll_19_dragon_rug_squeegee_1080p60.mp4            4.9 s  Cartoon dragon rug, squeegee through foam
+  Refluff_Broll_20_clean_rug_background_plate_1080p60.mp4     8.0 s  Slow side-step over the clean rug: a plate for titles (silent track)
+
+GAMEPLAY WITH THE HUD  [04_Gameplay_With_HUD]
+  Refluff_Gameplay_01_squeegee_with_hud_1080p60.mp4           8.0 s  Squeegee lanes; CLEAN bar and wallet tick up
+  Refluff_Gameplay_02_wet_vacuum_with_hud_1080p60.mp4         5.6 s  Wet vacuum; money arrives per cleaned percent
+  Refluff_Gameplay_03_scraper_with_hud_1080p60.mp4            5.3 s  Scraper with the full HUD and tool belt
+  Refluff_Gameplay_04_new_rug_arrives_with_hud_1080p60.mp4    5.0 s  A new job: CLEAN 0 % (silent track)
+  Refluff_Gameplay_05_handover_summary_card_1080p60.mp4       8.2 s  Hand-over and the job summary card
+  Refluff_Gameplay_06_upgrade_bench_and_shop_1080p60.mp4     10.2 s  Walk to the bench, open the shop, buy upgrades
+  Refluff_Gameplay_07_inspection_lamps_with_hud_1080p60.mp4   4.9 s  Both inspection lamps with the HUD
+
+VERTICAL 9:16  [05_Vertical_9x16]
+  Refluff_Vertical_00_clean_edit_20s_1080x1920.mp4           20.0 s  Ready 20-second edit: six tools, no captions
+  Refluff_Vertical_01_scraper_1080x1920.mp4                   5.3 s  Scraper breaks the crust
+  Refluff_Vertical_02_hose_1080x1920.mp4                      5.8 s  Hose turns dust to mud
+  Refluff_Vertical_03_rotary_brush_1080x1920.mp4              5.5 s  Rotary brush in pink foam
+  Refluff_Vertical_04_squeegee_1080x1920.mp4                  5.2 s  Squeegee opens the pattern
+  Refluff_Vertical_05_wet_vacuum_1080x1920.mp4                5.6 s  Wet vacuum, colours return
+  Refluff_Vertical_06_clean_pile_1080x1920.mp4                5.6 s  Clean, dry pile
+
+========================================================================
+CONTACT
+vahovgames@gmail.com
+https://store.steampowered.com/app/5304930/
